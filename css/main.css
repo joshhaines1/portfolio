@@ -2332,6 +2332,8 @@ header .logo a {
 }
 #stats .row {
 	max-width: 1440px;
+	display: flex;
+	justify-content: center;
 }
 #stats .stat {
 	border-left: 1px solid rgba(255, 255, 255, 0.12);
@@ -2351,7 +2353,25 @@ header .logo a {
 	margin-bottom: 0;
 	font-family: "poppins-medium", sans-serif;
 	color: white;
+	display: inline-block;
 }
+
+.stat-count-nonanimated {
+	color: #FFFFFF;
+	font-size: 3.6rem;
+	margin-bottom: 0;
+	font-family: "poppins-medium", sans-serif;
+	color: white;
+	display: inline-block;
+	margin-left: -0.6rem;
+	margin-top: 1.2rem;
+}
+
+.stats-list {
+	justify-content: center;
+	display: flex;
+}
+
 #stats .stat-title {
 	color: rgba(255, 255, 255, 0.5);
 }
