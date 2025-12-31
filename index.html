@@ -117,12 +117,11 @@
 				<span class="skill-pill">CSS</span>
 				<span class="skill-pill">React</span>
 				<span class="skill-pill">React Native</span>
-				<span class="skill-pill">Node.js</span>
 				<span class="skill-pill">AWS (Lambda, S3, SQS, SNS, Step Functions)</span>
+                <span class="skill-pill">Git</span>
 				<span class="skill-pill">Terraform (IaC)</span>
 				<span class="skill-pill">Google Cloud</span>
 				<span class="skill-pill">CI/CD</span>
-				<span class="skill-pill">Git</span>
 				<span class="skill-pill">Bitbucket</span>
 				<span class="skill-pill">Jira</span>
 				<span class="skill-pill">Confluence</span>
@@ -130,6 +129,7 @@
 				<span class="skill-pill">Kanban</span>
 				<span class="skill-pill">REST APIs</span>
 				<span class="skill-pill">Unit Testing</span>
+                <span class="skill-pill">Node.js</span>
 			</div>
    		</div>
 
@@ -313,198 +313,53 @@
    		<div class="col-twelve">
 
    			<h5>Portfolio</h5>
-   			<h1>Personal Development</h1>
-
-   			<p class="lead">Explore a selection of applications I've developed using modern technologies and best practices. Each project showcases my ability to create user-friendly, feature-rich applications. Click on each one to learn more!</p>
-
+   			<h1 id="projects-header">Personal Development</h1>
    		</div>   		
-   	</div> <!-- /section-intro--> 
+   	</div> <!-- /section-intro-->
 
-   	<div class="row portfolio-content">
+		<!-- Portfolio Item 1: Betify -->
+		<div class="portfolio-item">
+			<div class="portfolio-image">
+				<img src="images/portfolio/BetifyAppLogoLight.png" class="app-icon" alt="Betify App">
+			</div>
+			<div class="portfolio-content">
+				<h2 class="portfolio-title">Betify</h2>
+				<h3 class="portfolio-subtitle">Fantasy Sports Betting Mobile App</h3>
+				<p class="portfolio-description">I’m currently developing a fantasy-style social sportsbook that allows friends and family to create private or public groups and wager on custom events using in-app currency with no real-money stakes. The app emphasizes competition, strategy, and social interaction rather than gambling, making it a safe and casual way to engage with sports and friendly challenges.
+                    Users can create and join groups, define their own betting events, place wagers, and track outcomes through shared leaderboards.
+                    The application is being built with React Native and TypeScript for a cross-platform mobile experience, with Google Firebase handling authentication, real-time data storage, and backend logic. Development is currently focused on core features such as user accounts, group management, event creation, and bet tracking, with plans to expand social and analytics features as the project matures.</p>
+				<div class="portfolio-tech">
+					<span class="tech-tag">React Native</span>
+					<span class="tech-tag">Google Cloud</span>
+					<span class="tech-tag">Firebase</span>
+					<span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">Express.js</span>
+                    <span class="tech-tag">Full-Stack</span>
+                    <span class="tech-tag">Python</span>
+				</div>
+			</div>
+		</div> <!-- /portfolio-item -->
 
-   		<div class="col-twelve">
+		<!-- Portfolio Item 2: Pure Poker -->
+		<div class="portfolio-item">
+			<div class="portfolio-image">
+				<img src="images/portfolio/PurePokerIcon.jpg" alt="Pure Poker">
+			</div>
+			<div class="portfolio-content">
+				<h2 class="portfolio-title">Pure Poker</h2>
+				<h3 class="portfolio-subtitle">Cross-Platform Poker Game</h3>
+				<p class="portfolio-description">I developed a fully featured poker game using Unity and C#, designed to run seamlessly across iOS and Android. The game implements authentic poker mechanics, including full hand evaluation, turn-based betting logic, pot management, and win determination that mirrors real-world gameplay.
+                    The application was optimized for performance and usability across different mobile ecosystems.
+                    The game was successfully published on both the Apple App Store and Google Play Store, where it reached 8,000+ total downloads, providing real-world experience in shipping, maintaining, and supporting a production application used by thousands of players. This game is still available for download on the Google Play Store but is no longer being maintained.</p>
+				<div class="portfolio-tech">
+					<span class="tech-tag">C#</span>
+					<span class="tech-tag">Unity</span>
+					<span class="tech-tag">iOS</span>
+					<span class="tech-tag">Android</span>
+				</div>
+			</div>
+		</div> <!-- /portfolio-item -->
 
-   		<!-- portfolio-wrapper -->
-	         <div id="folio-wrapper" class="block-1-3 block-mob-full stack">
-                 <div class="bgrid folio-item">
-	               <div class="item-wrap">
-	               	<img src="images/portfolio/mainScreen.png" alt="Betify">
-	                  <a href="#modal-01" class="overlay">	                  	           
-	                     <div class="folio-item-table">
-	                     	<div class="folio-item-cell">
-		     					       <h3 class="folio-title">Betify</h3>
-                                <div class="folio-types-container">
-		     					    	 <span class="folio-types">
-		     					       	  iOS, Android, React Native, Google Cloud, Python, Javascript, Google Firebase, Express.js
-		     					       </span>
-                                </div>
-		     					   </div>	                      	
-	                     </div>                    
-	                  </a>
-	               </div>	               
-	        		</div> <!-- /folio-item -->
-
-	        		<div class="bgrid folio-item">
-	               <div class="item-wrap">
-	               	<img src="images/portfolio/PurePoker.png" alt="App 2">
-	               	<a href="#modal-02" class="overlay">              		                  
-	                     <div class="folio-item-table">
-	                     	<div class="folio-item-cell">
-	                     		<h3 class="folio-title">Pure Poker</h3>
-                                <div class="folio-types-container">
-		     					    	<span class="folio-types">
-		     					       	  iOS, Android, C#, Unity Game Engine
-		     					      </span>
-                                    </div>
-		     					   </div> 	                      	
-	                     </div>                    
-	                  </a>
-	               </div>
-	        		</div> <!-- /folio-item -->
-	            <!-- modal popups - begin
-	            ============================================================= -->
-	            <div id="modal-01" class="popup-modal slider mfp-hide">	
-
-				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-liberty.jpg" alt="App 1" />
-				     	</div>      	
-
-					   <div class="description-box">
-					      <h4>App Name</h4>		      
-					      <p>Brief description of your app. Explain what it does, the problem it solves, and the key features that make it unique.</p>
-
-					      <div class="categories">
-					      	<strong>Skills Used:</strong> iOS, Android, React Native
-					      </div>			               
-					   </div>
-
-			         <div class="link-box">
-			            <a href="#project-url">View Project</a>
-					      <a href="#" class="popup-modal-dismiss">Close</a>
-			         </div>		      
-
-				   </div> <!-- /modal-01 -->
-
-				   <div id="modal-02" class="popup-modal slider mfp-hide">	
-
-				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-shutterbug.jpg" alt="App 2" />
-				     	</div>      	
-
-					   <div class="description-box">
-					      <h4>App Name</h4>		      
-					      <p>Brief description of your app. Explain what it does, the problem it solves, and the key features that make it unique.</p>
-
-					      <div class="categories">
-					      	<strong>Skills Used:</strong> iOS, Swift, SwiftUI
-					      </div>			               
-					   </div>
-
-			         <div class="link-box">
-			            <a href="#project-url">View Project</a>
-					      <a href="#" class="popup-modal-dismiss">Close</a>
-			         </div>		      
-
-				   </div> <!-- /modal-02 -->
-
-				   <div id="modal-03" class="popup-modal slider mfp-hide">	
-
-				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-clouds.jpg" alt="App 3" />
-				     	</div>      	
-
-					   <div class="description-box">
-					      <h4>App Name</h4>		      
-					      <p>Brief description of your app. Explain what it does, the problem it solves, and the key features that make it unique.</p>
-
-					      <div class="categories">
-					      	<strong>Skills Used:</strong> Android, Java, Firebase
-					      </div>			               
-					   </div>
-
-			         <div class="link-box">
-			            <a href="#project-url">View Project</a>
-					      <a href="#" class="popup-modal-dismiss">Close</a>
-			         </div>		      
-
-				   </div> <!-- /modal-03 -->
-
-				   <div id="modal-04" class="popup-modal slider mfp-hide">	
-
-				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-beetle.jpg" alt="App 4" />
-				     	</div>      	
-
-					   <div class="description-box">
-					      <h4>App Name</h4>		      
-					      <p>Brief description of your app. Explain what it does, the problem it solves, and the key features that make it unique.</p>
-
-					      <div class="categories">
-					      	<strong>Skills Used:</strong> Flutter, Dart, Firebase
-					      </div>			               
-					   </div>
-
-			         <div class="link-box">
-			            <a href="#project-url">View Project</a>
-					      <a href="#" class="popup-modal-dismiss">Close</a>
-			         </div>		      
-
-				   </div> <!-- /modal-04 -->
-
-				   <div id="modal-05" class="popup-modal slider mfp-hide">	
-
-				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-lighthouse.jpg" alt="App 5" />
-				     	</div>      	
-
-					   <div class="description-box">
-					      <h4>App Name</h4>		      
-					      <p>Brief description of your app. Explain what it does, the problem it solves, and the key features that make it unique.</p>
-
-					      <div class="categories">
-					      	<strong>Skills Used:</strong> iOS, Android, React Native
-					      </div>			               
-					   </div>
-
-			         <div class="link-box">
-			            <a href="#project-url">View Project</a>
-					      <a href="#" class="popup-modal-dismiss">Close</a>
-			         </div>		      
-
-				   </div> <!-- /modal-05 -->
-
-				   <div id="modal-06" class="popup-modal slider mfp-hide">	
-
-				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-salad.jpg" alt="App 6" />
-				     	</div>      	
-
-					   <div class="description-box">
-					      <h4>App Name</h4>		      
-					      <p>Brief description of your app. Explain what it does, the problem it solves, and the key features that make it unique.</p>
-
-					      <div class="categories">
-					      	<strong>Skills Used:</strong> iOS, Swift, Core Data
-					      </div>			               
-					   </div>
-
-			         <div class="link-box">
-			            <a href="#project-url">View Project</a>
-					      <a href="#" class="popup-modal-dismiss">Close</a>
-			         </div>		      
-
-				   </div> <!-- /modal-06 -->
-
-
-				   <!-- modal popups - end
-	            ============================================================= -->
-
-	         </div> <!-- /portfolio-wrapper --> 
-
-   		</div>  <!-- /twelve -->   
-
-   	</div> <!-- /portfolio-content --> 
-		
 	</section> <!-- /portfolio --> 
 
 
@@ -643,6 +498,9 @@
 						<h3 class="stat-count">
 							300
 						</h3>
+						<h3 class="stat-count-nonanimated">
+						+
+					</h3>
 
 						<h5 class="stat-title">
 							App Revenue
@@ -659,6 +517,9 @@
 						<h3 class="stat-count">
 							1000
 						</h3>
+						<h3 class="stat-count-nonanimated">
+						+
+					</h3>
 
 						<h5 class="stat-title">
 							Hours of Experience

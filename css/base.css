@@ -484,6 +484,13 @@ textarea {
 	width: 100%;
 }
 
+.row-centered {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
 /**
  * small screens - (_grid.scss)
  * --------------------------------------------------------------- 

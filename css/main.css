@@ -1065,10 +1065,13 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 .section-intro h1 {
 	font-family: "poppins-semibold", serif;
-	font-size: 3.6rem;
+	font-size: 3rem;
 	color: #313131;
 	line-height: 1.25;
 	margin-bottom: 1.2rem;
+}
+#projects-header {
+    font-size: 5.6rem;
 }
 .section-intro h5 {
 	color: #FF0077;
@@ -1997,6 +2000,111 @@ header .logo a {
 	transform: scale(1.05);
 }
 
+/* Portfolio Items - Two Column Layout */
+.portfolio-item {
+	margin-bottom: 6rem;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.portfolio-image {
+	position: relative;
+	overflow: visible;
+	border-radius: 16px;
+	justify-content: center;
+	display: flex;
+	flex: 0 0 calc(50% - 2rem);
+	min-width: 300px;
+	-webkit-transition: transform 0.35s ease, box-shadow 0.35s ease;
+	-moz-transition: transform 0.35s ease, box-shadow 0.35s ease;
+	transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+#contact {
+    background: #151515;
+    padding-top: 12rem;
+    padding-bottom: 7.2rem;
+
+}
+
+.portfolio-image img {
+	width: 100%;
+	max-width: 45%;
+	height: auto;
+	box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+	display: block;
+	border-radius: 12px;
+	-moz-transition: transform 0.35s ease;
+	-o-transition: transform 0.35s ease;
+	-webkit-transition: transform 0.35s ease;
+	-ms-transition: transform 0.35s ease;
+	transition: transform 0.35s ease;
+}
+
+.portfolio-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	flex: 1 1 calc(50% - 2rem);
+	min-width: 300px;
+    max-width: 800px;
+    margin-left: -10rem;
+}
+
+.portfolio-title {
+	font-family: "poppins-semibold", sans-serif;
+	font-size: 3.2rem;
+	color: #313131;
+	margin: 0 0 1rem 0;
+	letter-spacing: -0.1rem;
+}
+
+.portfolio-subtitle {
+	font-family: "poppins-semibold", sans-serif;
+	font-size: 1.8rem;
+	color: #FF0077;
+	margin: 0 0 2rem 0;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.15rem;
+}
+
+.portfolio-description {
+	font-family: "lora-regular", serif;
+	font-size: 1.65rem;
+	color: #9a9a9a;
+	line-height: 1.8;
+	margin: 0 0 2rem 0;
+}
+
+.portfolio-tech {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+
+.tech-tag {
+	display: inline-block;
+	background: rgb(255, 255, 255);
+	color: #000000;
+	padding: 0.6rem 1.2rem;
+	border-radius: 8px;
+	font-family: "poppins-regular", sans-serif;
+	font-size: 1.2rem;
+	border: 1px solid rgba(0, 0, 0, 0.5);
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.tech-tag:hover {
+	background: rgba(255, 0, 119, 0.05);
+	border-color: #FF0077;
+}
+
 /**
  * responsive:
  * portfolio
@@ -2010,8 +2118,30 @@ header .logo a {
 	#portfolio .folio-title {
 		font-size: 3.1rem;
 	}
+	.portfolio-item {
+		gap: 2.5rem;
+		margin-bottom: 5rem;
+	}
+	.portfolio-image {
+		flex: 0 0 40%;
+	}
+	.portfolio-content {
+		flex: 1 1 60%;
+        margin-left: 0rem;
+	}
+	.portfolio-title {
+		font-size: 2.8rem;
+	}
+	.portfolio-subtitle {
+		font-size: 1.6rem;
+	}
+	.top-bar .nav-button-list {
+		display: flex;
+		min-height: 45px;
+	}
 }
-@media only screen and (max-width:768px) {
+
+@media only screen and (max-width:850px) {
 	#portfolio {
 		padding-left: 2rem;
 		padding-right: 2rem;
@@ -2019,15 +2149,151 @@ header .logo a {
 	#portfolio .folio-title {
 		font-size: 2.5rem;
 	}
+	.portfolio-item {
+		flex-direction: column;
+		gap: 2rem;
+		margin-bottom: 4rem;
+	}
+	.portfolio-image {
+		flex: 0 0 100%;
+		min-width: 100%;
+		max-width: 500px;
+		margin: 0 auto;
+	}
+	.portfolio-content {
+		flex: 0 0 100%;
+		min-width: 90%;
+		text-align: left;
+	}
+	.portfolio-image img {
+		max-width: 30%;
+	}
+	.portfolio-title {
+		font-size: 2.4rem;
+	}
+	.portfolio-subtitle {
+		font-size: 1.4rem;
+	}
+	.portfolio-description {
+		font-size: 1.5rem;
+		line-height: 1.7;
+	}
+	.portfolio-tech {
+		justify-content: flex-start;
+		gap: 0.8rem;
+	}
+	.tech-tag {
+		font-size: 1.1rem;
+	}
+    .portfolio-content {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    #resume .timeline-header {
+        width: 37%
+    }
+    header {
+        display: none;
+    }
 }
-@media only screen and (max-width:400px) {
+
+@media only screen and (max-width:600px) {
+	#portfolio {
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+		padding-top: 8rem;
+		padding-bottom: 8rem;
+	}
+	.portfolio-item {
+		margin-bottom: 3.5rem;
+		gap: 1.5rem;
+	}
+	.portfolio-image {
+		max-width: 350px;
+	}
+	.portfolio-title {
+		font-size: 2rem;
+        text-align: center;
+	}
+	.portfolio-subtitle {
+		font-size: 1.3rem;
+		margin-bottom: 1.5rem;
+        text-align: center;
+	}
+	.portfolio-description {
+		font-size: 1.4rem;
+		line-height: 1.6;
+		margin-bottom: 1.5rem;
+        text-align: center;
+        margin-left: 1rem;
+        margin-right: 1rem;
+	}
+	.tech-tag {
+		font-size: 1rem;
+		padding: 0.5rem 1rem;
+	}
+    .portfolio-tech {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width:450px) {
 	#portfolio {
 		padding-left: 1rem;
 		padding-right: 1rem;
+		padding-top: 6rem;
+		padding-bottom: 6rem;
 	}
+    #projects-header {
+        font-size: 4.6rem;
+    }
 	#portfolio .folio-title {
 		font-size: 2.2rem;
 	}
+	.portfolio-item {
+		flex-direction: column;
+		gap: 1.5rem;
+		margin-bottom: 3rem;
+	}
+	.portfolio-image {
+		max-width: 280px;
+	}
+	.portfolio-image img {
+		max-width: 65%;
+	}
+	.portfolio-title {
+		font-size: 1.8rem;
+	}
+	.portfolio-subtitle {
+		font-size: 1.1rem;
+		margin-bottom: 1.2rem;
+	}
+	.portfolio-description {
+		font-size: 1.3rem;
+		line-height: 1.5;
+		margin-bottom: 1.2rem;
+	}
+	.portfolio-tech {
+		gap: 0.6rem;
+	}
+	.tech-tag {
+		font-size: 0.9rem;
+		padding: 0.4rem 0.8rem;
+		border-radius: 6px;
+	}
+	.top-bar .nav-button-list {
+		display: none;
+		min-height: 0px;
+	}
+    #stats {
+        display: none;
+    }
+    #contact {
+        padding-top: 0;
+    }
+    #resume .timeline-header {
+        width: 100%
+    }
 }
 
 /**
@@ -2411,11 +2677,6 @@ header .logo a {
  *
  * ------------------------------------------------------------------- 
  */
-#contact {
-	background: #151515;
-	padding-top: 12rem;
-	padding-bottom: 7.2rem;
-}
 #contact .section-intro h1 {
 	color: white;
 }
