@@ -2072,7 +2072,7 @@ header .logo a {
 
 .portfolio-description {
 	font-family: "lora-regular", serif;
-	font-size: 1.65rem;
+	font-size: 1.9rem;
 	color: #9a9a9a;
 	line-height: 1.8;
 	margin: 0 0 2rem 0;
@@ -2175,16 +2175,18 @@ header .logo a {
 		font-size: 1.4rem;
 	}
 	.portfolio-description {
-		font-size: 1.5rem;
+		font-size: 1.9rem;
 		line-height: 1.7;
 	}
 	.portfolio-tech {
 		justify-content: flex-start;
 		gap: 0.8rem;
 	}
-	.tech-tag {
-		font-size: 1.1rem;
-	}
+    .tech-tag {
+        font-size: 1.5rem;
+        padding: 0.8rem 0.8rem;
+        border-radius: 6px;
+    }
     .portfolio-content {
         margin-left: 2rem;
         margin-right: 2rem;
@@ -2221,7 +2223,7 @@ header .logo a {
         text-align: center;
 	}
 	.portfolio-description {
-		font-size: 1.4rem;
+		font-size: 1.6rem;
 		line-height: 1.6;
 		margin-bottom: 1.5rem;
         text-align: center;
@@ -2262,14 +2264,14 @@ header .logo a {
 		max-width: 65%;
 	}
 	.portfolio-title {
-		font-size: 1.8rem;
+		font-size: 2.8rem;
 	}
 	.portfolio-subtitle {
-		font-size: 1.1rem;
+		font-size: 1.4rem;
 		margin-bottom: 1.2rem;
 	}
 	.portfolio-description {
-		font-size: 1.3rem;
+		font-size: 1.6rem;
 		line-height: 1.5;
 		margin-bottom: 1.2rem;
 	}
@@ -2277,8 +2279,8 @@ header .logo a {
 		gap: 0.6rem;
 	}
 	.tech-tag {
-		font-size: 0.9rem;
-		padding: 0.4rem 0.8rem;
+		font-size: 1.5rem;
+		padding: 0.8rem 0.8rem;
 		border-radius: 6px;
 	}
 	.top-bar .nav-button-list {
