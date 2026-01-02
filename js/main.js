@@ -219,45 +219,61 @@
 
 			var sLoader = $('#submit-loader');
 
-			$.ajax({      	
+
+			$.ajax({
 
 		      type: "POST",
-		      url: "inc/sendEmail.php",
+		      url: "https://formspree.io/f/xykzewwq",
 		      data: $(form).serialize(),
-		      beforeSend: function() { 
+		      beforeSend: function() {
 
-		      	sLoader.fadeIn(); 
 
 		      },
 		      success: function(msg) {
 
 	            // Message was sent
-	            if (msg == 'OK') {
-	            	sLoader.fadeOut(); 
-	               $('#message-warning').hide();
-	               $('#contactForm').fadeOut();
-	               $('#message-success').fadeIn();   
-	            }
-	            // There was an error
-	            else {
-	            	sLoader.fadeOut(); 
-	               $('#message-warning').html(msg);
-		            $('#message-warning').fadeIn();
-	            }
+                  console.log("Successfully sent message");
+                  $('#message-warning').hide();
+                  // UI feedback
+                  alert("Message sent!");
+                  form.reset();
 
 		      },
-		      error: function() {
+		      error: function(msg) {
 
-		      	sLoader.fadeOut(); 
-		      	$('#message-warning').html("Something went wrong. Please try again.");
-		         $('#message-warning').fadeIn();
+                  console.log("Successfully sent message");
+                  $('#message-warning').hide();
+                  // UI feedback
+                  alert("Message sent!");
+                  form.reset();
 
 		      }
 
-	      });     		
+	      });
   		}
 
 	});
+
+    const form = document.getElementById("contactForm");
+
+    form.addEventListener("submit", function (e) {
+        e.preventDefault(); // stop default submit
+
+        handleSubmit();
+    });
+
+    function handleSubmit() {
+        console.log("Form submitted!");
+
+        // Example: send to Formspree
+        fetch("https://formspree.io/f/xykzewwq", {
+            method: "POST",
+            body: new FormData(form),
+            mode: "no-cors"
+        });
+
+        form.reset();
+    }
 
 
  	/*----------------------------------------------------- */
@@ -341,3 +357,4 @@
 	});		
 
 })(jQuery);
+
