@@ -362,7 +362,6 @@ pre,
 blockquote,
 figure,
 table,
-p,
 ol,
 dl,
 form,
@@ -1118,7 +1117,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  */
 header {
 	position: relative; /* keep header in flow but allow z-index to work */
-	width: 100%;
+	width: 90%;
 	/* visual height of the header used to overlay the intro background */
 	height: 66px;
 	min-height: 66px;
@@ -1801,12 +1800,21 @@ header .logo a {
 }
 #resume .timeline-header h3 {
 	margin-bottom: 0;
+	margin-left: -15rem;
 }
 #resume .timeline-header p {
 	font-family: "poppins-regular", sans-serif;
 	font-size: 1.6rem;
-	color: #888888;
 }
+
+.team-name {
+	font-size: 1.4rem;
+	line-height: 1.714;
+	letter-spacing: .10rem;
+	color: #FF0077;
+	margin-left: -2rem;
+}
+
 #resume .timeline-content {
 	margin-left: 35%;
 	padding-left: 60px;
