@@ -90,7 +90,7 @@ a, a:visited {
 	transition: all 0.3s ease-in-out;
 }
 a:hover, a:focus, a:active {
-	color: #FF0077;
+	color: #ff496b;
 	outline: 0;
 }
 
@@ -298,7 +298,7 @@ ul.disc li::before {
 	width: 8px;
 	height: 8px;
 	border-radius: 50%;
-	background: #FF0077;
+	background: #ff496b;
 	position: absolute;
 	left: -17px;
 	top: 11px;
@@ -306,7 +306,7 @@ ul.disc li::before {
 }
 dt {
 	margin: 0;
-	color: #FF0077;
+	color: #ff496b;
 }
 dd {
 	margin: 0 0 0 2rem;
@@ -458,7 +458,7 @@ img.pull-left {
 	display: none;
 }
 .pace .pace-progress {
-	background: #FF0077;
+	background: #ff496b;
 	position: fixed;
 	z-index: 900;
 	top: 0;
@@ -501,7 +501,7 @@ img.pull-left {
 	border-top: 11px solid rgba(255, 255, 255, 0.1);
 	border-right: 11px solid rgba(255, 255, 255, 0.1);
 	border-bottom: 11px solid rgba(255, 255, 255, 0.1);
-	border-left: 11px solid #FF0077;
+	border-left: 11px solid #ff496b;
 	-webkit-animation: load 1.1s infinite linear;
 	animation: load 1.1s infinite linear;
 	display: block;
@@ -623,8 +623,8 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-	color: #cc005f;
-	border-bottom: 1px solid #FF0077;
+	color: #ff496b;
+	border-bottom: 1px solid #ff496b;
 }
 label, legend {
 	font-family: "poppins-bold", sans-serif;
@@ -765,8 +765,8 @@ button.stroke.large, .button.stroke.large {
 	line-height: 5.4rem !important;
 }
 button.stroke:hover, .button.stroke:hover {
-	border: 3px solid #FF0077;
-	color: #FF0077;
+	border: 3px solid #ff496b;
+	color: #ff496b;
 }
 button::-moz-focus-inner, input::-moz-focus-inner {
 	border: 0;
@@ -954,7 +954,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	color: #252525;
 }
 .stats-tabs li a:hover {
-	color: #FF0077;
+	color: #ff496b;
 }
 .stats-tabs li a em {
 	display: block;
@@ -1073,7 +1073,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     font-size: 5.6rem;
 }
 .section-intro h5 {
-	color: #FF0077;
+	color: #ff496b;
 	font-size: 1.6rem;
 	line-height: 1.875;
 	margin-bottom: 0.3rem;
@@ -1117,13 +1117,14 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  */
 header {
 	position: relative; /* keep header in flow but allow z-index to work */
-	width: 90%;
+	width: 100%;
+	max-width: none;
 	/* visual height of the header used to overlay the intro background */
 	height: 66px;
 	min-height: 66px;
 	z-index: 600;
 	/* pull the following section up so the header overlays the intro background */
-	margin-bottom: -66px;
+	margin: 0 0 -66px;
 }
 header .row {
 	position: relative;
@@ -1134,11 +1135,13 @@ header .top-bar {
     display: flex;
     flex-direction: row;
     width: 100%;
-	background: rgba(0, 0, 0, 0.3);
-	min-width: 220px;
-	min-height: 45px;
+    background: rgba(0, 0, 0, 0.3);
+    min-width: 220px;
+    min-height: 45px;
     align-items: center;
     justify-content: center;
+    padding: 0 1.5rem;
+    box-sizing: border-box;
 }
 
 header .logo {
@@ -1176,7 +1179,7 @@ header .logo a {
 }
 .menu-toggle span {
 	display: block;
-	background-color: #FF0077;
+	background-color: #ff496b;
 	width: 24px;
 	height: 3px;
 	margin-top: -1.5px;
@@ -1289,12 +1292,12 @@ header .logo a {
 	border: none;
 }
 .main-navigation li a:hover {
-	color: #FF0077;
+	color: #ff496b;
 	padding-left: 1rem;
 }
 .main-navigation li.current > a {
 	background: none;
-	color: #FF0077;
+	color: #ff496b;
 }
 
 /**
@@ -1376,7 +1379,7 @@ header .logo a {
 	text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 .intro-content h5 {
-	color: #cc005f;
+	color: #ff496b;
 	font-family: "poppins-bold", sans-serif;
 	font-size: 2.3rem;
 	line-height: 1.565;
@@ -1423,7 +1426,7 @@ header .logo a {
 	letter-spacing: .25rem;
 }
 .intro-content .button:hover, .intro-content .button:focus {
-	border-color: #cc005f;
+	border-color: #ff496b;
 }
 .intro-content .button::after {
 	display: inline-block;
@@ -1434,6 +1437,36 @@ header .logo a {
 	text-align: center;
 	position: relative;
 	left: 1.2rem;
+}
+
+.org-section {
+	background: #f8f8f8;
+	padding: 7rem 0;
+}
+
+.org-note {
+	max-width: 860px;
+	margin: 0 auto;
+	padding: 1.4rem 1.6rem;
+	border: 1px solid rgba(255, 73, 107, 0.25);
+	background: #ffffff;
+	border-radius: 10px;
+	box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.org-note p {
+	margin: 0;
+	color: #111111;
+	font-size: 1.5rem;
+	line-height: 1.8;
+}
+
+.org-note p + p {
+	margin-top: 0.5rem;
+}
+
+.org-note strong {
+	color: #ff496b;
 }
 
 .intro-social {
@@ -1455,7 +1488,7 @@ header .logo a {
 	color: #FFFFFF;
 }
 .intro-social li a:hover, .intro-social li a:focus {
-	color: #cc005f;
+	color: #ff496b;
 }
 
 /**
@@ -1540,17 +1573,24 @@ header .logo a {
 .nav-button-list {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    height: 10px;
+    justify-content: center;
+    height: 100%;
+    gap: 1rem;
+    flex-wrap: nowrap;
+    padding: 0;
+    margin: 0;
+    width: 100%;
 }
 
 .nav-button {
 	display: flex;
-	padding: 10px;
+	padding: 0.5rem 0.75rem;
 	align-items: center;
 	justify-content: center;
-	width: 350px;
-	margin: 10px;
+	flex: 0 0 auto;
+	max-width: none;
+	min-width: 0;
+	margin: 0;
 	text-align: center;
 }
 
@@ -1559,7 +1599,7 @@ header .logo a {
     height: 100%;
     display: block;
 	color: #ffffff;
-	font-size: 1.7rem; /* smaller text for top buttons */
+	font-size: clamp(1.1rem, 1.4vw, 1.7rem);
     font-family: poppins-regular, sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 0.1rem;
@@ -1567,11 +1607,12 @@ header .logo a {
 	-webkit-transition: color 0.18s ease, background-color 0.18s ease;
 	transition: color 0.18s ease, background-color 0.18s ease;
 	padding: 0.2rem 0.4rem;
+	white-space: nowrap;
 }
 
 .nav-button-text:hover,
 .nav-button:hover .nav-button-text {
-	color: #ff006f; /* slightly darker on hover */
+	color: #ff496b; /* slightly darker on hover */
 }
 
 .nav-button:focus-within .nav-button-text,
@@ -1670,9 +1711,9 @@ header .logo a {
 }
 .skill-pill:hover {
 	transform: translateY(-4px);
-	background-color: #cc005f;
+	background-color: #ff496b;
 	color: #ffffff;
-	border-color: #cc005f;
+	border-color: #ff496b;
 	cursor: default;
 }
 
@@ -1748,7 +1789,7 @@ header .logo a {
 	text-align: center;
 }
 #resume .resume-header h2 {
-	color: #FF0077;
+	color: #ff496b;
 }
 
 #resume .resume-timeline {
@@ -1811,7 +1852,7 @@ header .logo a {
 	font-size: 1.4rem;
 	line-height: 1.714;
 	letter-spacing: .10rem;
-	color: #FF0077;
+	color: #ff496b;
 	margin-left: -2rem;
 }
 
@@ -2071,7 +2112,7 @@ header .logo a {
 .portfolio-subtitle {
 	font-family: "poppins-semibold", sans-serif;
 	font-size: 1.8rem;
-	color: #FF0077;
+	color: #ff496b;
 	margin: 0 0 2rem 0;
 	font-weight: 600;
 	text-transform: uppercase;
@@ -2110,7 +2151,7 @@ header .logo a {
 
 .tech-tag:hover {
 	background: rgba(255, 0, 119, 0.05);
-	border-color: #FF0077;
+	border-color: #ff496b;
 }
 
 /**
@@ -2122,6 +2163,13 @@ header .logo a {
 	#portfolio {
 		padding-left: 3rem;
 		padding-right: 3rem;
+	}
+	.nav-button {
+		max-width: 120px;
+		padding: 0.4rem;
+	}
+	.nav-button-text {
+		font-size: clamp(0.95rem, 1.3vw, 1.35rem);
 	}
 	#portfolio .folio-title {
 		font-size: 3.1rem;
@@ -2202,7 +2250,18 @@ header .logo a {
     #resume .timeline-header {
         width: 37%
     }
-    header {
+    .nav-button {
+        max-width: 100px;
+        padding: 0.3rem;
+    }
+    .nav-button-text {
+        font-size: 0.95rem;
+        letter-spacing: 0.05rem;
+    }
+}
+
+@media only screen and (max-width:620px) {
+    .nav-button-list {
         display: none;
     }
 }
@@ -2356,7 +2415,7 @@ header .logo a {
 	font-family: "poppins-bold", sans-serif;
 	font-size: 1.2rem;
 	line-height: 6rem;
-	color: #cc005f;
+	color: #ff496b;
 	text-transform: uppercase;
 	letter-spacing: 3px;
 	cursor: pointer;
@@ -2374,7 +2433,7 @@ header .logo a {
 	border-right: 1px solid rgba(200, 200, 200, 0.1);
 }
 .popup-modal .link-box a:hover {
-	background: #cc005f;
+	background: #ff496b;
 	border: none;
 }
 @media only screen and (max-width:600px) {
@@ -2540,7 +2599,7 @@ header .logo a {
 	color: white;
 }
 #services .section-intro h5 {
-	color: #FF0077;
+	color: #ff496b;
 }
 #services .section-intro p {
 	color: rgba(255, 255, 255, 0.7);
@@ -2562,7 +2621,7 @@ header .logo a {
 }
 .services-list .icon i {
 	font-size: 5.4rem;
-	color: #FF0077;
+	color: #ff496b;
 }
 .services-list h3 {
 	color: #FFFFFF;
@@ -2590,7 +2649,7 @@ header .logo a {
 	background: #FFFFFF;
 }
 .owl-theme .owl-controls .owl-page.active span {
-	background: #FF0077;
+	background: #ff496b;
 }
 
 
@@ -2601,7 +2660,7 @@ header .logo a {
  * ------------------------------------------------------------------- 
  */
 #stats {
-	background: #990047;
+	background: #ffffff;
 	padding-top: 7.2rem;
 	padding-bottom: 6rem;
 	text-align: center;
@@ -2623,21 +2682,19 @@ header .logo a {
 	color: #000000;
 }
 #stats .stat-count {
-	color: #FFFFFF;
+	color: #000000;
 	font-size: 3.6rem;
 	margin-top: 1.2rem;
 	margin-bottom: 0;
 	font-family: "poppins-medium", sans-serif;
-	color: white;
 	display: inline-block;
 }
 
 .stat-count-nonanimated {
-	color: #FFFFFF;
+	color: #000000;
 	font-size: 3.6rem;
 	margin-bottom: 0;
 	font-family: "poppins-medium", sans-serif;
-	color: white;
 	display: inline-block;
 	margin-left: -0.6rem;
 	margin-top: 1.2rem;
@@ -2649,7 +2706,7 @@ header .logo a {
 }
 
 #stats .stat-title {
-	color: rgba(255, 255, 255, 0.5);
+	color: rgba(0, 0, 0, 0.7);
 }
 
 /**
@@ -2691,7 +2748,7 @@ header .logo a {
 	color: white;
 }
 #contact .section-intro h5 {
-	color: #FF0077;
+	color: #ff496b;
 }
 #contact .section-intro p {
 	color: rgba(255, 255, 255, 0.7);
@@ -2744,7 +2801,7 @@ header .logo a {
 	padding: 0 2rem;
 	margin: 0;
 	color: #FFFFFF;
-	background: #FF0077;
+	background: #ff496b;
 }
 #contact form .form-field label::after {
 	position: absolute;
@@ -2753,7 +2810,7 @@ header .logo a {
 	margin-top: -6px;
 	border-top: 5px solid transparent;
 	border-bottom: 5px solid transparent;
-	border-right: 5px solid #FF0077;
+	border-right: 5px solid #ff496b;
 	content: "";
 }
 #contact input[type="text"],
@@ -2775,7 +2832,7 @@ header .logo a {
 #contact input[type="text"]:focus,
 #contact input[type="password"]:focus,
 #contact input[type="email"]:focus {
-	border-color: #FF0077;
+	border-color: #ff496b;
 	color: #FFFFFF;
 }
 #contact textarea {
@@ -2783,7 +2840,7 @@ header .logo a {
 	padding: 1.8rem 2rem;
 }
 #contact textarea:focus {
-	border-color: #FF0077;
+	border-color: #ff496b;
 	color: #FFFFFF;
 }
 #contact button.submitform {
@@ -2795,11 +2852,11 @@ header .logo a {
 	padding: 0 3rem;
 	margin-top: 4.8rem;
 	width: 100%;
-	background: #FF0077;
+	background: #ff496b;
 	color: #FFFFFF;
 }
 #contact button.submitform:hover, #contact button.submitform:focus {
-	background: #cc005f;
+	background: #ff496b;
 }
 #message-warning, #message-success {
 	display: none;
@@ -2810,10 +2867,10 @@ header .logo a {
 	width: 100%;
 }
 #message-warning {
-	color: #FF0077;
+	color: #ff496b;
 }
 #message-success {
-	color: #FF0077;
+	color: #ff496b;
 }
 #message-warning i, #message-success i {
 	margin-right: 10px;
@@ -2858,7 +2915,7 @@ header .logo a {
 	color: #FFFFFF;
 }
 .contact-info h5 {
-	color: #FF0077;
+	color: #ff496b;
 }
 
 /**
@@ -2932,7 +2989,7 @@ footer a, footer a:visited {
 	color: #FFFFFF;
 }
 footer a:hover, footer a:focus {
-	color: #FF0077;
+	color: #ff496b;
 }
 footer .row {
 	max-width: 900px;
@@ -3011,7 +3068,7 @@ footer .copyright span:last-child::after {
 	width: 6rem;
 	line-height: 6.6rem;
 	text-align: center;
-	background: #cc005f;
+	background: #ff496b;
 	color: #FFFFFF;
 	text-align: center;
 	text-transform: uppercase;
@@ -3061,7 +3118,7 @@ footer .copyright span:last-child::after {
 	max-width: 500px;
 	width: 90%;
 	box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
-	border-top: 4px solid #FF0077;
+	border-top: 4px solid #ff496b;
 	animation: slideUp 0.3s ease-out;
 }
 
@@ -3071,7 +3128,7 @@ footer .copyright span:last-child::after {
 
 .success-icon {
 	font-size: 4rem;
-	color: #FF0077;
+	color: #ff496b;
 	animation: scaleIn 0.5s ease-out;
 }
 
@@ -3090,7 +3147,7 @@ footer .copyright span:last-child::after {
 }
 
 .close-modal {
-	background-color: #FF0077;
+	background-color: #ff496b;
 	color: #ffffff;
 	border: none;
 	padding: 1rem 2.5rem;
