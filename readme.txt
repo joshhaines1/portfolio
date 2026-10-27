@@ -1,1 +1,0 @@
-Portfolio Website Created by Josh Haines
